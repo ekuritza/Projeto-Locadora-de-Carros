@@ -1,6 +1,9 @@
+package views;
 import java.util.ArrayList;
 
 import CPF.ValidaCPF;
+import models.Veiculo;
+import utils.Console;
 
 public class Principal {
     public static void main(String[] args) {
