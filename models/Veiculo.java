@@ -7,10 +7,10 @@ public class Veiculo {
     private String fabricante;
     private String placaDoVeiculoString;
     private String cor;
-    private String situacaoDoVeiculo;
+    private int situacaoDoVeiculo;
     private String anoDoModelo;
     private String km;
-    private double valorDiaria
+    private double valorDiaria;
 
     public String getId() {
         return id;
@@ -30,10 +30,10 @@ public class Veiculo {
     public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
-    public String getPlacaDoVeiculoString() {
+    public String getPlacaDoVeiculo() {
         return placaDoVeiculoString;
     }
-    public void setPlacaDoVeiculoString(String placaDoVeiculoString) {
+    public void setPlacaDoVeiculo(String placaDoVeiculoString) {
         this.placaDoVeiculoString = placaDoVeiculoString;
     }
     public String getCor() {
@@ -42,10 +42,10 @@ public class Veiculo {
     public void setCor(String cor) {
         this.cor = cor;
     }
-    public String getSituacaoDoVeiculo() {
+    public int getSituacaoDoVeiculo() {
         return situacaoDoVeiculo;
     }
-    public void setSituacaoDoVeiculo(String situacaoDoVeiculo) {
+    public void setSituacaoDoVeiculo(int situacaoDoVeiculo) {
         this.situacaoDoVeiculo = situacaoDoVeiculo;
     }
     public String getAnoDoModelo() {
@@ -69,7 +69,7 @@ public class Veiculo {
 
     @Override
     public String toString() {
-        return "Nome do veículo: " + nome + " Nome do fabricante: " + fabricante + " Placa do veículo: " + placaDoVeiculoString + " Cor do veículo: " + cor + " Situação do veículo: " + situacaoDoVeiculo + " Ano do modelo: " + anoDoModelo " Km do veículo: " + km " Valor diária: " + valorDiaria;
+        return "Nome do veículo: " + nome + " Nome do fabricante: " + fabricante + " Placa do veículo: " + placaDoVeiculoString + " Cor do veículo: " + cor + " Situação do veículo: " + situacaoDoVeiculo + " Ano do modelo: " + anoDoModelo + " Km do veículo: " + km  + " Valor diária: " + valorDiaria;
     }
 
 
