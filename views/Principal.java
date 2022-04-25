@@ -12,13 +12,12 @@ public class Principal {
             System.out.println("Selecione a opção desejada: ");
             System.out.println("1  Cadastrar carro");
             System.out.println("2  Lista de carros");
-            System.out.println("3  Atualizar informação dos carros");
-            System.out.println("4  Novo cliente");
-            System.out.println("5  Lista de clientes");
-            System.out.println("6  Cadastro de vendedor");
-            System.out.println("7  Lista de vendedores");
-            System.out.println("8  Cadastro de locação");
-            System.out.println("9  Lista de locações");
+            System.out.println("3  Novo cliente");
+            System.out.println("4  Lista de clientes");
+            System.out.println("5  Cadastro de vendedor");
+            System.out.println("6  Lista de vendedores");
+            System.out.println("7  Cadastro de locação");
+            System.out.println("8  Lista de locações");
             System.out.println("0  Sair");
 
             escolhaMenu = Console.readInt("Selecione a opção: ");
