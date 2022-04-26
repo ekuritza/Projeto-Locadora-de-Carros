@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import models.Veiculo;
 
 public class VeiculoController {
-    private ArrayList<Veiculo> listaVeiculo = new ArrayList<Veiculo>();
+    private static ArrayList<Veiculo> listaVeiculo = new ArrayList<Veiculo>();
 
     public void cadastrar(Veiculo veiculo){
         listaVeiculo.add(veiculo);

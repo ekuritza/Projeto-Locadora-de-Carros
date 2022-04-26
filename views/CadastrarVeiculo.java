@@ -14,7 +14,7 @@ public class CadastrarVeiculo{
     veiculo.setFabricante(Console.readString("Digite o fabricante do veículo: "));
     veiculo.setPlacaDoVeiculo(Console.readString("Digite a placa do veículo: "));
     veiculo.setCor(Console.readString("Digite a cor do veículo: "));
-    veiculo.setSituacaoDoVeiculo(Console.readInt("Digite a situação do veículo: "));
+    veiculo.setSituacaoDoVeiculo(Console.readBoolean("Digite a situação do veículo: "));
     veiculo.setAnoDoModelo(Console.readString("Digite o ano do veículo: "));
     veiculo.setKm(Console.readString("Informe a quilometragem do veículo: "));
     veiculo.setValorDiaria(Console.readDouble("Qual o valor da diária: "));

@@ -7,7 +7,7 @@ public class Veiculo {
     private String fabricante;
     private String placaDoVeiculoString;
     private String cor;
-    private int situacaoDoVeiculo;
+    private boolean situacaoDoVeiculo;
     private String anoDoModelo;
     private String km;
     private double valorDiaria;
@@ -42,10 +42,10 @@ public class Veiculo {
     public void setCor(String cor) {
         this.cor = cor;
     }
-    public int getSituacaoDoVeiculo() {
+    public boolean getSituacaoDoVeiculo() {
         return situacaoDoVeiculo;
     }
-    public void setSituacaoDoVeiculo(int situacaoDoVeiculo) {
+    public void setSituacaoDoVeiculo(boolean situacaoDoVeiculo) {
         this.situacaoDoVeiculo = situacaoDoVeiculo;
     }
     public String getAnoDoModelo() {
