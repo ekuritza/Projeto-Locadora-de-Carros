@@ -1,6 +1,5 @@
 package views;
 
-//import CPF.ValidaCPF;
 import utils.Console;
 
 public class Principal {
@@ -10,8 +9,8 @@ public class Principal {
         int escolhaMenu;
         do {
             System.out.println("Selecione a opção desejada: ");
-            System.out.println("1  Cadastrar carro");
-            System.out.println("2  Lista de carros");
+            System.out.println("1  Cadastrar veículo para locação");
+            System.out.println("2  Lista de veículos cadastrados");
             System.out.println("3  Novo cliente");
             System.out.println("4  Lista de clientes");
             System.out.println("5  Cadastro de vendedor");
@@ -19,8 +18,9 @@ public class Principal {
             System.out.println("7  Cadastro de locação");
             System.out.println("8  Lista de locações");
             System.out.println("0  Sair");
+            System.out.println("------------------------------");
 
-            escolhaMenu = Console.readInt("Selecione a opção: ");
+            escolhaMenu = Console.readInt("Selecione a opção desejada: ");
             switch (escolhaMenu) {
                 case 1:
                     CadastrarVeiculo cadastro = new CadastrarVeiculo();
