@@ -17,6 +17,8 @@ public class Principal {
             System.out.println("6  Lista de vendedores");
             System.out.println("7  Cadastro de locação");
             System.out.println("8  Lista de locações");
+            System.out.println("9  Devolver veiculo");
+            System.out.println("10 Remover veiculo");
             System.out.println("0  Sair \n");
             System.out.println("------------------------------");
 
@@ -54,6 +56,15 @@ public class Principal {
                     ListarLocacao listarLocacao = new ListarLocacao();
                     listarLocacao.renderizar();
                     break;
+                case 9:
+                    
+
+                    break
+                case 10:
+                    RemoverVeiculo removerVeiculo = new RemoverVeiculo();
+                    removerVeiculo.removerVeiculo()
+
+                    break
                 case 0:
                     System.out.println("\n -- SAINDO -- \n");
                     break;

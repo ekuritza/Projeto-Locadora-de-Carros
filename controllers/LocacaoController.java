@@ -12,4 +12,8 @@ public class LocacaoController {
     public ArrayList<Locacao> listar(){
         return listaLocacao;
     }
+
+    public int getListLenth() {
+        return listaLocacao.size()
+    }
 }
