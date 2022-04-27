@@ -1,6 +1,4 @@
 package utils;
-//package util;
-
 /*
  * Created on 13/06/2005
  *
