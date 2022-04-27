@@ -10,8 +10,8 @@ public class CadastrarFuncionario {
     public void renderizar(){
         Funcionario funcionario = new Funcionario();
         System.out.println("\n -- CADASTRO DE FUNCIONÁRIOS -- \n");
-        funcionario.setNome(Console.readString("Digite seu nome: "));
-        funcionario.setCpf(Console.readString("Digite seu cpf: "));
+        funcionario.setNome(Console.readString("Digite o nome do funcionário: "));
+        funcionario.setCpf(Console.readString("Digite o CPF do funcionário: "));
         if (ValidaCPF.isCPF(funcionario.getCpf()) == true){
             FuncionarioController.cadastrar(funcionario);
             System.out.println("\nFuncionário cadastrado !");
