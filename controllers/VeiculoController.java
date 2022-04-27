@@ -12,4 +12,13 @@ public class VeiculoController {
     public ArrayList<Veiculo> listar(){
         return listaVeiculo;
     }
+
+    public Veiculo buscarPorPlaca(String placa){
+        for (Veiculo veiculoCadastrado : listaVeiculo) {
+            if(veiculoCadastrado.getPlacaDoVeiculo().equals(placa)){
+                return veiculoCadastrado;
+            }
+        }
+        return null;
+    }
 }
