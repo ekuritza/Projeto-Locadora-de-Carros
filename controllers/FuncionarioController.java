@@ -12,4 +12,13 @@ public class FuncionarioController{
     public static ArrayList<Funcionario> listar(){
         return listaFuncionarios;
     }
+
+    public Funcionario buscarPorNome(String nome){
+        for (Funcionario funcionarioCadastrado : listaFuncionarios) {
+            if(funcionarioCadastrado.getNome().equals(nome)){
+                return funcionarioCadastrado;
+            }
+        }
+        return null;
+    }
 }

@@ -5,7 +5,7 @@ import utils.Console;
 public class Principal {
     public static void main(String[] args) {
 
-        System.out.println("-----ALUGUEL DE CARROS UP-----");
+        System.out.println("-----ALUGUEL DE CARROS UP-----\n");
         int escolhaMenu;
         do {
             System.out.println("Selecione a opção desejada: ");
@@ -37,14 +37,23 @@ public class Principal {
                 case 4:
                     ListarCliente listarCliente = new ListarCliente();
                     listarCliente.renderizar();
+                    break;
                 case 5:
                     CadastrarFuncionario cadastrarFuncionario = new CadastrarFuncionario();
                     cadastrarFuncionario.renderizar();
-                break;
+                    break;
                 case 6:
                     ListarFuncionario listaFuncionarios = new ListarFuncionario();
                     listaFuncionarios.renderizar();
-                break;
+                    break;
+                case 7:
+                    CadastrarLocacao cadastrarLocacao = new CadastrarLocacao();
+                    cadastrarLocacao.renderizar();
+                    break;
+                case 8: 
+                    ListarLocacao listarLocacao = new ListarLocacao();
+                    listarLocacao.renderizar();
+                    break;
                 case 0:
                     System.out.println("\n -- SAINDO -- \n");
                     break;
