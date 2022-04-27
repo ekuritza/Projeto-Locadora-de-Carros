@@ -37,6 +37,14 @@ public class Principal {
                 case 4:
                     ListarCliente listarCliente = new ListarCliente();
                     listarCliente.renderizar();
+                case 5:
+                    CadastrarFuncionario cadastrarFuncionario = new CadastrarFuncionario();
+                    cadastrarFuncionario.renderizar();
+                break;
+                case 6:
+                    ListarFuncionario listaFuncionarios = new ListarFuncionario();
+                    listaFuncionarios.renderizar();
+                break;
                 case 0:
                     System.out.println("\n -- SAINDO -- \n");
                     break;
