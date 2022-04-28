@@ -1,6 +1,6 @@
 package models;
 
-import LocacaoController;
+import controllers.LocacaoController;
 
 public class Locacao {
     private int id;
@@ -16,7 +16,7 @@ public class Locacao {
         return id;
     }
     public void setId() {
-        this id = locacaoController.getListLenth();
+        this.id = locacaoController.getListLenth();
     }
     
     public Veiculo getVeiculo() {

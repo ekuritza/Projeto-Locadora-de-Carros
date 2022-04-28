@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import controllers.VeiculoController;
 import models.*;
+import utils.Console;
 
 public class EditarStatusVeiculo {
 

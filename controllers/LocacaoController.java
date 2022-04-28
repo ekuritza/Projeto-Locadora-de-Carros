@@ -14,6 +14,6 @@ public class LocacaoController {
     }
 
     public int getListLenth() {
-        return listaLocacao.size()
+        return listaLocacao.size();
     }
 }

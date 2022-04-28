@@ -24,7 +24,7 @@ public class VeiculoController {
     }
 
     public void removeVeiculo(int id) {
-        listaVeiculo.remove(id-1)
+        listaVeiculo.remove(id-1);
         System.out.println("Veiculo removido\n");
     }
 
@@ -35,7 +35,7 @@ public class VeiculoController {
     public void changeStatus(int id) {
         for (Veiculo veiculoCadastrado : listaVeiculo) {
             if(veiculoCadastrado.getId().equals(id)){
-                veiculoCadastrado.setSituacaoDoVeiculo(True)
+                veiculoCadastrado.setSituacaoDoVeiculo(true);
             }
         }
         

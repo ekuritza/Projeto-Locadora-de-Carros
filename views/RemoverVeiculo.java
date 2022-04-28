@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import controllers.VeiculoController;
 import models.*;
+import utils.Console;
 
 public class RemoverVeiculo {
 
@@ -17,7 +18,7 @@ public class RemoverVeiculo {
         System.out.println("\n -- REMOVER VEICULO -- \n");
         
         id = (Console.readInt("Digite o ID do veículo: ")); 
-        veiculoController.removerVeiculo(id);
+        veiculoController.removeVeiculo(id);
         System.out.println("----------------------------");
     }
 

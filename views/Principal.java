@@ -57,14 +57,13 @@ public class Principal {
                     listarLocacao.renderizar();
                     break;
                 case 9:
-                    
-
-                    break
+                    EditarStatusVeiculo editarStatusVeiculo = new EditarStatusVeiculo();
+                    editarStatusVeiculo.editarStatus();
+                    break;
                 case 10:
                     RemoverVeiculo removerVeiculo = new RemoverVeiculo();
-                    removerVeiculo.removerVeiculo()
-
-                    break
+                    removerVeiculo.removerVeiculo();
+                    break;
                 case 0:
                     System.out.println("\n -- SAINDO -- \n");
                     break;
