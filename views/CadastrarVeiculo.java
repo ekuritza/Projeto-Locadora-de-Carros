@@ -10,6 +10,7 @@ public class CadastrarVeiculo{
     VeiculoController veiculoController = new VeiculoController();
 
     System.out.println("\n -- CADASTRO DE VEÍCULOS -- \n");
+    veiculo.setId(Console.readString("Digite o Id do veículo: "));
     veiculo.setNome(Console.readString("Digite o nome do veículo: "));
     veiculo.setFabricante(Console.readString("Digite o fabricante do veículo: "));
     veiculo.setPlacaDoVeiculo(Console.readString("Digite a placa do veículo: "));
