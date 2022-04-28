@@ -58,6 +58,6 @@ public class Locacao {
 
     @Override
     public String toString() {
-        return "id: " + id + "Cliente: " + clientes + "\nFuncionário: " + funcionario + "\nVeículo: " + veiculo + "\nQuantidade de dias locados: " + diasLocados + "\nValor final da locação: " + valorFinal;
+        return "id: " + id + "\nCliente: " + "\n"+  clientes + "\n" + "Funcionário reponsável pela locação : " + "\n"+ funcionario + "\n" + "Veículo alugado: " + "\n" + veiculo + "\nQuantidade de dias locados: " + diasLocados + "\nValor final da locação: " + valorFinal;
     }
 }

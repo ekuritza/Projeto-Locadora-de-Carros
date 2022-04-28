@@ -13,13 +13,13 @@ public class Principal {
             System.out.println("2  Lista de veículos cadastrados");
             System.out.println("3  Cadastrar cliente");
             System.out.println("4  Lista de clientes");
-            System.out.println("5  Cadastro de vendedor");
-            System.out.println("6  Lista de vendedores");
+            System.out.println("5  Cadastro de funcionário");
+            System.out.println("6  Lista de funcionários");
             System.out.println("7  Cadastro de locação");
             System.out.println("8  Lista de locações");
             System.out.println("9  Devolver veiculo");
             System.out.println("10 Remover veiculo");
-            System.out.println("0  Sair \n");
+            System.out.println("0  Sair");
             System.out.println("------------------------------");
 
             escolhaMenu = Console.readInt("Selecione a opção desejada: ");

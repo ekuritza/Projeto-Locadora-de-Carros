@@ -14,7 +14,7 @@ public class CadastrarFuncionario {
         funcionario.setCpf(Console.readString("Digite o CPF do funcionário: "));
         if (ValidaCPF.isCPF(funcionario.getCpf()) == true){
             FuncionarioController.cadastrar(funcionario);
-            System.out.println("\nFuncionário cadastrado !");
+            System.out.println("\nFuncionário cadastrado!\n");
         }else System.out.printf("\nErro, CPF inválido !\n");
     }
     

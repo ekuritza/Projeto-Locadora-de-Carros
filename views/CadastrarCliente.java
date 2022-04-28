@@ -26,7 +26,7 @@ public class CadastrarCliente {
             clientes.setBairro(Console.readString("Digite seu bairro: "));
             clientes.setCidade(Console.readString("Digite sua cidade: "));
             clientes.setEstado(Console.readString("Digite a UF do seu estado: "));
-            clientes.setCep(Console.readString("Digite o seu CEP: "));
+            clientes.setCep(Console.readString("Digite o seu CEP: \n"));
 
             clienteController.Cadastrar(clientes);
 

@@ -42,6 +42,7 @@ public class CadastrarLocacao {
     }else{
         System.out.println("Carro não encontrado");
     }
+    locacao.setDiasLocados(Console.readInt("Quantos dias o veículo será alugado? "));
    } 
 }
 

@@ -20,6 +20,6 @@ public class Funcionario {
 
     @Override
     public String toString(){ 
-        return " Nome: " + nome + " | CPF: " + cpf;
+        return "Nome do funcionário: " + nome + "\nCPF do funcionário: " + cpf + "\n";
     }
 }

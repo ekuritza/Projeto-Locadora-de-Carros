@@ -71,8 +71,6 @@ public class Veiculo {
     @Override
     public String toString() {
         return "Nome do veículo: " + nome + "\nNome do fabricante: " + fabricante + "\nPlaca do veículo: " + placaDoVeiculoString + "\nCor do veículo: " + cor + "\nSituação do veículo: " + situacaoDoVeiculo + "\nAno do modelo: " + anoDoModelo + "\nKm do veículo: " + km  + "\nValor diária: " + valorDiaria + "\n" + "\n";
+        
     }
-
-
-
 }
