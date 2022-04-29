@@ -3,7 +3,7 @@ package models;
 
 public class Veiculo {
 
-    private String id;
+    private int id;
     private String nome;
     private String fabricante;
     private String placaDoVeiculoString;
@@ -13,10 +13,10 @@ public class Veiculo {
     private String km;
     private double valorDiaria;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
     public String getNome() {

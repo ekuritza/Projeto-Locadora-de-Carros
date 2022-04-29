@@ -9,6 +9,9 @@ import models.*;
 
 public class CadastrarLocacao {
    public void renderizar() {
+    int diasLocados;
+    double valorFinal;
+
     Locacao locacao = new Locacao();
     LocacaoController locacaoController = new LocacaoController();
 
@@ -18,8 +21,9 @@ public class CadastrarLocacao {
 
     System.out.println("\n -- CADASTRO DE LOCAÇÕES -- \n");
     
-    String placa = Console.readString("Informe o placa do veículo: ");
-    Veiculo veiculo = veiculoController.buscarPorPlaca(placa);
+    int id = Console.readInt("Informe o id do veículo: ");
+    veiculoController.buscarPorId(id);
+    Veiculo veiculo = veiculoController.buscarPorId(id);
     if(veiculo != null){
         locacao.setVeiculo(veiculo);
 
@@ -32,6 +36,7 @@ public class CadastrarLocacao {
             Funcionario funcionario = funcionarioController.buscarPorNome(nomeFuncionario);
             if(funcionario != null){
                 locacao.setfuncionario(funcionario);
+                veiculoController.changeStatus(id, false);
                 locacaoController.cadastrar(locacao);
             }else{
                 System.out.println("Funcionário não encontrado");
@@ -42,7 +47,10 @@ public class CadastrarLocacao {
     }else{
         System.out.println("Carro não encontrado");
     }
-    locacao.setDiasLocados(Console.readInt("Quantos dias o veículo será alugado? "));
+    diasLocados = Console.readInt("Quantos dias o veículo será alugado? ");
+    locacao.setDiasLocados(diasLocados);
+    valorFinal = locacaoController.setValorLocacao(id, diasLocados);
+    locacao.setValorFinal(valorFinal);
    } 
 }
 

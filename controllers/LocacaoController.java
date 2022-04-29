@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import models.Locacao;
 
 public class LocacaoController {
+    Double valorFinal;
     private static ArrayList<Locacao> listaLocacao = new ArrayList<Locacao>();
 
     public void cadastrar(Locacao locacao){
@@ -16,4 +17,10 @@ public class LocacaoController {
     public int getListLenth() {
         return listaLocacao.size();
     }
+
+    public Double setValorLocacao(int id, int diasLocados){
+        valorFinal = diasLocados * VeiculoController.getValorDiaria(id);
+        return valorFinal;
+    } 
+
 }

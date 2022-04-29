@@ -8,7 +8,7 @@ public class Locacao {
     private Clientes clientes;
     private Funcionario funcionario;
     private int diasLocados;
-    private int valorFinal;
+    private Double valorFinal;
 
     LocacaoController locacaoController = new LocacaoController();
 
@@ -42,10 +42,10 @@ public class Locacao {
         this.funcionario = funcionario;
     }
 
-    public int getValorFinal() {
+    public Double getValorFinal() {
         return valorFinal;
     }
-    public void setValorFinal(int valorFinal) {
+    public void setValorFinal(Double valorFinal) {
         this.valorFinal = valorFinal;
     }
 
