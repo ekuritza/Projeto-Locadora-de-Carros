@@ -1,11 +1,23 @@
-/*  */package models;
+package models;
+
+import controllers.LocacaoController;
 
 public class Locacao {
+    private int id;
     private Veiculo veiculo;
     private Clientes clientes;
     private Funcionario funcionario;
     private int diasLocados;
-    private int valorFinal;
+    private Double valorFinal;
+
+    LocacaoController locacaoController = new LocacaoController();
+
+    public int getId() {
+        return id;
+    }
+    public void setId() {
+        this.id = locacaoController.getListLenth();
+    }
     
     public Veiculo getVeiculo() {
         return veiculo;
@@ -30,13 +42,12 @@ public class Locacao {
         this.funcionario = funcionario;
     }
 
-    public int getValorFinal() {
+    public Double getValorFinal() {
         return valorFinal;
     }
-    public void setValorFinal(int valorFinal) {
+    public void setValorFinal(Double valorFinal) {
         this.valorFinal = valorFinal;
     }
-
 
     public int getDiasLocados() {
         return diasLocados;
@@ -47,6 +58,6 @@ public class Locacao {
 
     @Override
     public String toString() {
-        return "Cliente: " + clientes + "\nFuncionário: " + funcionario + "\nVeículo: " + veiculo + "\nQuantidade de dias locados: " + diasLocados + "\nValor final da locação: " + valorFinal;
+        return "id: " + id + "\nCliente: " + "\n"+  clientes + "\n" + "Funcionário reponsável pela locação : " + "\n"+ funcionario + "\n" + "Veículo alugado: " + "\n" + veiculo + "\nQuantidade de dias locados: " + diasLocados + "\nValor final da locação: " + valorFinal;
     }
 }

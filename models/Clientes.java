@@ -92,6 +92,6 @@ public class Clientes{
     public String toString() {
         return "Nome: " + nome + "\nCPF: " + cpf + "\nData de Nascimento: " + dataNascimento + 
         "\nNº CNH: " + cnh + "\nValidade: " + validadeHabilitacao + "\nCategoria: " +  categoriaHabilitacao + "\nEndereço: " + endereco + 
-        "\nNº: " + numero + "\nBairro: " + bairro + "\nCidade: " + cidade + "\nUF: " + estado + "\nCEP: " + cep;
+        "\nNº: " + numero + "\nBairro: " + bairro + "\nCidade: " + cidade + "\nUF: " + estado + "\nCEP: " + cep  + "\n";
     }
 }

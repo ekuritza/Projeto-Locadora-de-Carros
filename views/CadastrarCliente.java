@@ -7,16 +7,25 @@ import utils.ValidaCPF;
 
 public class CadastrarCliente {
 
+    String continuar;
     public void renderizar(){
         Clientes clientes = new Clientes();
         ClienteController clienteController = new ClienteController();
 
         System.out.println("\n -- CADASTRO DE CLIENTES -- \n");
             clientes.setNome(Console.readString("Digite seu nome: "));
-            clientes.setCpf(Console.readString("Digite seu CPF: "));
-                if (ValidaCPF.isCPF(clientes.getCpf()) == true){
-                    System.out.println("CPF válido!");
-                }else System.out.printf("Erro, CPF inválido!\n");
+                do {
+                    clientes.setCpf(Console.readString("Digite seu CPF: "));
+                    if (ValidaCPF.isCPF(clientes.getCpf()) == true){
+                        System.out.println("CPF válido!");
+                    }else{
+                        System.out.printf("Erro, CPF inválido!\n");
+                        continuar = Console.readString("Deseja continuar? S/N");
+                        if(continuar.equals("S") || continuar.equals("s")){
+                            break;
+                        } 
+                    };
+                }while (ValidaCPF.isCPF(clientes.getCpf())!= true);
             clientes.setDataNascimento(Console.readString("Digite a sua data de nascimento: "));
             clientes.setCnh(Console.readString("Digite o Nº da sua CNH: "));
             clientes.setValidadeHabilitacao(Console.readString("Digite a validade da sua CNH: "));
@@ -27,6 +36,7 @@ public class CadastrarCliente {
             clientes.setCidade(Console.readString("Digite sua cidade: "));
             clientes.setEstado(Console.readString("Digite a UF do seu estado: "));
             clientes.setCep(Console.readString("Digite o seu CEP: "));
+            System.out.println("\n");
 
             clienteController.Cadastrar(clientes);
 
