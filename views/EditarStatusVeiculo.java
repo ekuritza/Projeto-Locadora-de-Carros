@@ -1,9 +1,7 @@
 package views;
 
-import java.util.ArrayList;
 
 import controllers.VeiculoController;
-import models.*;
 import utils.Console;
 
 public class EditarStatusVeiculo {
@@ -13,7 +11,6 @@ public class EditarStatusVeiculo {
     public void editarStatus() {
 
         VeiculoController veiculoController = new VeiculoController();
-        ArrayList <Veiculo> listaVeiculos = veiculoController.listar();
 
         System.out.println("\n -- DEVOLVER VEICULO -- \n");
         

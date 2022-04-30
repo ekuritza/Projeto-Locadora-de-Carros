@@ -21,7 +21,7 @@ public class CadastrarCliente {
                     }else{
                         System.out.printf("Erro, CPF inválido!\n");
                         continuar = Console.readString("Deseja continuar? S/N");
-                        if(continuar.equals("S") || continuar.equals("s")){
+                        if(continuar.equals("N") || continuar.equals("n")){
                             break;
                         } 
                     };
