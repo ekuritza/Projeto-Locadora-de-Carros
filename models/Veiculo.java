@@ -12,6 +12,7 @@ public class Veiculo {
     private String anoDoModelo;
     private String km;
     private double valorDiaria;
+    // CADASTRAR categoria
 
     public int getId() {
         return id;
