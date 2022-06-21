@@ -16,3 +16,6 @@ public class Moto {
 // setar
 
 // to string
+
+
+// cadastrar categorias 
