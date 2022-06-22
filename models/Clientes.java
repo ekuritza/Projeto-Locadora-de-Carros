@@ -1,9 +1,7 @@
 package models;
 
-public class Clientes{
-    
-    private String nome;
-    private String cpf;
+public class Clientes extends Pessoa{
+
     private String dataNascimento;
     private String cnh;
     private String validadeHabilitacao;
@@ -15,18 +13,6 @@ public class Clientes{
     private String estado;
     private String cep;
     
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getCpf() {
-        return cpf;
-    }
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
     public String getDataNascimento() {
         return dataNascimento;
     }
@@ -90,8 +76,10 @@ public class Clientes{
 
     @Override
     public String toString() {
-        return "Nome: " + nome + "\nCPF: " + cpf + "\nData de Nascimento: " + dataNascimento + 
-        "\nNº CNH: " + cnh + "\nValidade: " + validadeHabilitacao + "\nCategoria: " +  categoriaHabilitacao + "\nEndereço: " + endereco + 
-        "\nNº: " + numero + "\nBairro: " + bairro + "\nCidade: " + cidade + "\nUF: " + estado + "\nCEP: " + cep  + "\n";
+        return "Nome:" + getNome() + "\nCPF: " + getCpf() + "\nData de Nascimento: " + dataNascimento + 
+        "\nNº CNH: " + cnh + "\nValidade: " + validadeHabilitacao + "\nCategoria: " +  categoriaHabilitacao + 
+        "\nEndereço: " + endereco + "\nNº: " + numero + "\nBairro: " + bairro + "\nCidade: " + cidade + "\nUF: " + 
+        estado + "\nCEP: " + cep  + "\n";
     }
+
 }
