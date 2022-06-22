@@ -47,5 +47,15 @@ public class VeiculoController {
             }
         }
         return valorDiaria;
-}
+    }
+
+    public ArrayList<Veiculo> listarVeiculosDisponiveis(){
+        var listaVeiculoDisponivel = new ArrayList<Veiculo>();
+        for (Veiculo veiculoDisponivel : listaVeiculo){
+            if (veiculoDisponivel.getSituacaoDoVeiculo()) {
+                listaVeiculoDisponivel.add(veiculoDisponivel);    
+            }           
+        }
+        return listaVeiculoDisponivel;
+    }
 }
