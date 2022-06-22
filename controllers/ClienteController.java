@@ -2,20 +2,25 @@ package controllers;
 
 import java.util.ArrayList;
 import models.Clientes;
+import controllers.interfaces.*;
 
-public class ClienteController {
+public class ClienteController implements IClienteController{
 
     private static ArrayList <Clientes> listaClientes = new ArrayList<Clientes>();
 
-    public void Cadastrar(Clientes clientes) {
-        listaClientes.add(clientes);  
+    @Override
+    public void cadastrar(Clientes clientes) {
+        listaClientes.add(clientes);
+        
     }
 
+    @Override
     public ArrayList<Clientes> listar() {
         return listaClientes;
     }
-
-    public Clientes buscarPorCpf(String cpf){
+  
+    @Override
+    public Clientes buscarPorCpf(String cpf) {
         for (Clientes clienteCadastrado : listaClientes) {
             if(clienteCadastrado.getCpf().equals(cpf)){
                 return clienteCadastrado;

@@ -38,7 +38,7 @@ public class CadastrarCliente {
             clientes.setCep(Console.readString("Digite o seu CEP: "));
             System.out.println("\n");
 
-            clienteController.Cadastrar(clientes);
+            clienteController.cadastrar(clientes);
 
             
     }
