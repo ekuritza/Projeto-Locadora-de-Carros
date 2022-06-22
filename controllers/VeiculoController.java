@@ -1,19 +1,27 @@
 package controllers;
 
 import java.util.ArrayList;
+
+import controllers.interfaces.IVeiculoController;
 import models.Veiculo;
 
-public class VeiculoController {
+public class VeiculoController implements IVeiculoController{
     
     private static ArrayList<Veiculo> listaVeiculo = new ArrayList<Veiculo>();
     static double valorDiaria;
+
+
+    @Override
     public void cadastrar(Veiculo veiculo){
         listaVeiculo.add(veiculo);
     }
+
+    @Override
     public ArrayList<Veiculo> listar(){
         return listaVeiculo;
     }
 
+    @Override
     public Veiculo buscarPorId(int id){
         for (Veiculo veiculoCadastrado : listaVeiculo) {
             if(veiculoCadastrado.getId() == (id)){
@@ -23,6 +31,7 @@ public class VeiculoController {
         return null;
     }
 
+    @Override
     public void removeVeiculo(int id) {
         listaVeiculo.remove(id-1);
         System.out.println("Veiculo removido\n");
@@ -32,6 +41,8 @@ public class VeiculoController {
      * Muda status do veiculo de Indisponivel (false)
      * para disponivel (True)
      */
+
+    @Override
     public void changeStatus(int id, boolean status) {
         for (Veiculo veiculoCadastrado : listaVeiculo) {
             if(veiculoCadastrado.getId() == id){
@@ -40,7 +51,8 @@ public class VeiculoController {
         }   
     }
 
-    public static double getValorDiaria(int id){
+    @Override
+    public double getValorDiaria(int id){
         for (Veiculo veiculoCadastrado : listaVeiculo) {
             if(veiculoCadastrado.getId() == (id)){
                 return veiculoCadastrado.getValorDiaria();
