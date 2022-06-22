@@ -25,6 +25,7 @@ public class CadastrarFuncionario {
                 } 
             };
         }while (ValidaCPF.isCPF(funcionario.getCpf())!= true);
+        funcionario.setMatricula(Console.readString("Digite a matrícula do funcionário: "));
         System.out.println("\n");
     }
     

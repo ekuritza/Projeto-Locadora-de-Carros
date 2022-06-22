@@ -1,26 +1,19 @@
 package models;
 
-public class Funcionario {
-  
-    private String nome;
-    private String cpf;
+public class Funcionario extends Pessoa{
 
-    public String getNome() {
-        return nome;
+    private String matricula;
+
+    public String getMatricula() {
+        return matricula;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    
-    public String getCpf() {
-        return cpf;
-    }
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
     @Override
-    public String toString(){ 
-        return "Nome do funcionário: " + nome + "\nCPF do funcionário: " + cpf + "\n";
+    public String toString() {
+        return "Nome: " + getNome() + "\nCPF: " + getCpf() +  "\nMatrícula do funcionário: " + matricula + "\n";
     }
 }
