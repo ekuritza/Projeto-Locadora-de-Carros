@@ -12,8 +12,15 @@ public class Veiculo {
     private String anoDoModelo;
     private String km;
     private double valorDiaria;
-    // CADASTRAR categoria
-
+    private int tipo;
+    
+    public int getTipo() {
+        return tipo;
+    }
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+    
     public int getId() {
         return id;
     }
@@ -68,7 +75,7 @@ public class Veiculo {
     public void setValorDiaria(double valorDiaria) {
         this.valorDiaria = valorDiaria;
     }
-
+    
     @Override
     public String toString() {
         return "Nome do veículo: " + nome + "\nNome do fabricante: " + fabricante + "\nPlaca do veículo: " + placaDoVeiculoString + "\nCor do veículo: " + cor + "\nSituação do veículo: " + situacaoDoVeiculo + "\nAno do modelo: " + anoDoModelo + "\nKm do veículo: " + km  + "\nValor diária: " + valorDiaria + "\n" + "\n";

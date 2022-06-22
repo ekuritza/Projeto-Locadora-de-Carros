@@ -1,21 +1,19 @@
 package models;
 
-public class Moto {
-    
+public class Moto extends Veiculo{
+
+    private String cilindrada;
+
+    public String getCilindrada() {
+        return cilindrada;
+    }
+
+    public void setCilindrada(String cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+
+    @Override
+    public String toString() {
+        return "Cilindrada: " + cilindrada;
+    }
 }
-
-
-// cilindrada moto
-
-// carro cambio
-
-
-// models moto carro
-
-// mexe ns views chamando os novos
-// setar
-
-// to string
-
-
-// cadastrar categorias 
