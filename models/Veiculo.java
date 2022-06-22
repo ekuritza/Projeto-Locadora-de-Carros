@@ -12,14 +12,7 @@ public class Veiculo {
     private String anoDoModelo;
     private String km;
     private double valorDiaria;
-    private int tipo;
-    
-    public int getTipo() {
-        return tipo;
-    }
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
+
     
     public int getId() {
         return id;
