@@ -68,12 +68,14 @@ public class Principal {
                     break;
 
                 case 11:
-                    
-                    break
+                    ListarVeiculosDisponiveis listarVeiculo = new ListarVeiculosDisponiveis();
+                    listarVeiculo.randerizar();
+                    break;
 
                 case 12:
-
-                    break
+                    FiltrarVeiculoPorAno filtrarVeiculoPorAno = new FiltrarVeiculoPorAno();
+                    filtrarVeiculoPorAno.randerizar();
+                    break;
 
                 case 0:
                     System.out.println("\n -- SAINDO -- \n");
