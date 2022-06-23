@@ -21,8 +21,8 @@ public class FiltrarVeiculoPorAno {
         anoModelo = Console.readString("Qual Ano de veiculo você quer filtrar ? ");
         ArrayList <Veiculo> listaVeiculoAno = veiculoController.FiltrarVeiculoPorAno(anoModelo);
 
-        if (listaVeiculoAno.size() <= 0){
-            System.out.println("Não possuimos nenhum veiculo cadastrado nessa data"+anoModelo);
+        if (listaVeiculoAno == null){
+            System.out.println("Não possuimos nenhum veiculo cadastrado nessa data" + anoModelo);
         }else{
             for(int i = 0; i < listaVeiculoAno.size(); i++){
                 System.out.println(listaVeiculoAno.get(i));

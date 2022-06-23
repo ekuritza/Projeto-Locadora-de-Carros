@@ -14,7 +14,7 @@ public class ListarVeiculosDisponiveis {
         VeiculoController veiculoController = new VeiculoController();
         ArrayList <Veiculo> listaVeiculosDisponiveis = veiculoController.listarVeiculosDisponiveis();
 
-        System.out.println("\n -- LISTA VEICULOS CADASTRADOS -- \n");
+        System.out.println("\n -- LISTA VEICULOS DISPONIVEIS -- \n");
         for(int i = 0; i < listaVeiculosDisponiveis.size(); i++){
             System.out.println(listaVeiculosDisponiveis.get(i));
         }
