@@ -59,5 +59,33 @@ public class VeiculoController implements IVeiculoController{
             }
         }
         return valorDiaria;
-}
+    }
+
+    public ArrayList<Veiculo> listarVeiculosDisponiveis(){
+        var listaVeiculoDisponivel = new ArrayList<Veiculo>();
+        for (Veiculo veiculoDisponivel : listaVeiculo){
+            if (veiculoDisponivel.getSituacaoDoVeiculo()) {
+                listaVeiculoDisponivel.add(veiculoDisponivel);    
+            }           
+        }
+        return listaVeiculoDisponivel;
+    }
+
+    public ArrayList<Veiculo> FiltrarVeiculoPorAno(String anoModelo){
+        var listaVeiculoAno = new ArrayList<Veiculo>();
+        for (Veiculo veiculo : listaVeiculo){
+            if (veiculo.getAnoDoModelo().equals(anoModelo)) {
+                listaVeiculoAno.add(veiculo);    
+            }           
+        }
+
+        if (listaVeiculoAno.size() <= 0) {
+            return null;
+        }else{
+            return listaVeiculoAno;
+        }
+
+        
+    }
+
 }
