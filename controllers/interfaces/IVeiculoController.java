@@ -11,4 +11,6 @@ public interface IVeiculoController {
     void removeVeiculo(int id);
     void changeStatus(int id, boolean status);
     double getValorDiaria(int id);
+    ArrayList<Veiculo> listarVeiculosDisponiveis();
+    ArrayList<Veiculo> FiltrarVeiculoPorAno(String anoModelo);
 }

@@ -61,6 +61,7 @@ public class VeiculoController implements IVeiculoController{
         return valorDiaria;
     }
 
+    @Override
     public ArrayList<Veiculo> listarVeiculosDisponiveis(){
         var listaVeiculoDisponivel = new ArrayList<Veiculo>();
         for (Veiculo veiculoDisponivel : listaVeiculo){
@@ -71,6 +72,7 @@ public class VeiculoController implements IVeiculoController{
         return listaVeiculoDisponivel;
     }
 
+    @Override
     public ArrayList<Veiculo> FiltrarVeiculoPorAno(String anoModelo){
         var listaVeiculoAno = new ArrayList<Veiculo>();
         for (Veiculo veiculo : listaVeiculo){
